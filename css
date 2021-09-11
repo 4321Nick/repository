@@ -1,0 +1,58 @@
+body {
+    background-color: #c2dde6;
+    border: 2px solid #2F4F4F;
+    }
+
+p {
+  margin-left: 5em;
+  margin-right: 5em;
+  color: #2F4F4F;
+}
+
+h1 {
+  margin-left: 5em;
+  margin-right: 5em;
+  color: #2F4F4F;
+}
+
+ol {
+  margin-left: 5em;
+  margin-right: 5em;
+  color: #2F4F4F;
+}
+
+span {
+  margin-left: 5em;
+  margin-right: 5em;
+  color: #2F4F4F;
+}
+
+iframe {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+button {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+a {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+img {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+    
+input {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+select {
+  margin-left: 5em;
+  margin-right: 5em;
+}
