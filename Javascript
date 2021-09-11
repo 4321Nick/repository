@@ -1,0 +1,89 @@
+Vue.createApp({
+  data() {
+    return {
+      counter: 0
+    }
+  }
+}).mount('#basic-event')
+
+const AttributeBindingApp = {
+  data() {
+    return {
+      message: 'You loaded this page on ' + new Date().toLocaleString()
+    }
+  }
+}
+
+const ComponentsApp = {
+  data() {
+    return {
+      taskList: [
+        { id: 0, text: 'Create Website Plan' },
+        { id: 1, text: 'Add HTML' },
+        { id: 2, text: 'Add CSS' },
+        { id: 3, text: 'Add JavaScript' },
+        { id: 4, text: 'Add Vue Components' },
+        { id: 5, text: 'Upload To Github' }
+      ]
+    }
+  }
+}
+
+const app = Vue.createApp(ComponentsApp)
+
+app.component('todo-item', {
+  props: ['todo'],
+  template: `<li>{{ todo.text }}</li>`
+})
+
+app.mount('#components-app')
+
+const TwoWayBindingApp = {
+  data() {
+    return {
+      message: ''
+    }
+  }
+}
+
+Vue.createApp(TwoWayBindingApp).mount('#two-way-binding')
+
+Vue.createApp({
+  data() {
+    return {
+      finishedTasks: []
+    }
+  }
+}).mount('#v-model-multiple-checkboxes')
+
+Vue.createApp({
+  data() {
+    return {
+      selected: 'HTML',
+      options: [
+        { text: 'HTML', value: 'Add HTML' },
+        { text: 'CSS', value: 'Add CSS' },
+        { text: 'Javascript', value: 'Add JavaScript' }
+      ]
+    }
+  }
+}).mount('#v-model-select-dynamic')
+
+Vue.component('child',{
+  props: {
+    text: {
+      type: String,
+      required: true
+    }
+  },
+  template: `<div>{{ text }}</div>`
+});
+
+new Vue({
+  el: '#app',
+  data() {
+    return {
+      message: 'hello mr. VUE'
+    }
+  }
+})
